@@ -21,9 +21,10 @@ python-dotenv>=1.0.0
 # GuatilaM
 google-genai==1.47.0
 
-# Sebastian1022
+# Sebastian1022 - Agente Sonido (Herramientas de audio, gráficos y composición)
 numpy>=1.25
 scipy>=1.11
+matplotlib>=3.5.0  # Gráficos sin interfaz GUI (backend Agg)
 sounddevice>=0.4.8
 pydub>=0.25.1
 audioop-lts>=0.2.2  # Reemplazo de audioop para Python 3.13+
@@ -31,7 +32,6 @@ audioop-lts>=0.2.2  # Reemplazo de audioop para Python 3.13+
 # M4r1l1
 python-dotenv
 Pillow
-matplotlib
 
 # Lina Puerto
 requests==2.32.4
