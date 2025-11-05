@@ -6,8 +6,8 @@ from .sub_agents.agentHierba.agent import root_agent as PastoBogotano
 from .sub_agents.datar_a_gente.agent import root_agent as DiarioIntuitivo
 from .sub_agents.GuatilaM.agent import root_agent as SequentialPipelineAgent
 from .sub_agents.LinaPuerto.agent import root_agent as AgenteBosque
-from .sub_agents.Sebastian1022.agent import root_agent as agente_sonido
-from .sub_agents.ZolsemiYa.agent import root_agent as horaculo
+from .sub_agents.Sebastian1022.agent import root_agent as AgenteSonoro
+from .sub_agents.ZolsemiYa.agent import root_agent as Horaculo
 
 root_agent = Agent(
     model=LiteLlm(
@@ -24,7 +24,7 @@ root_agent = Agent(
         DiarioIntuitivo,
         SequentialPipelineAgent,
         AgenteBosque,
-        agente_sonido,
-        horaculo
+        AgenteSonoro,
+        Horaculo
     ],
 )
