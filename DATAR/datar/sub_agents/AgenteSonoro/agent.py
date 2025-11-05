@@ -12,7 +12,7 @@ from .tools import (
 
 root_agent = Agent(
     model='gemini-2.5-flash',
-    name='agente_sonido',
+    name='AgenteSonoro',
     description='Soy tu conexión con el mundo natural, de lo macro a lo micro veo todo de manera sistémica.',
     instruction="""Eres un agente especializado en sonidos de la naturaleza. Tu rol es:
 
