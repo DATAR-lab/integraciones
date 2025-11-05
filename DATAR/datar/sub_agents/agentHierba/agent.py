@@ -3,6 +3,7 @@ from datetime import datetime
 from random import randint, choice
 from pydub import AudioSegment
 from google.adk.agents.llm_agent import Agent
+from google.adk.tools import FunctionTool
 
 
 # --- Configuración de carpetas --- #
@@ -136,5 +137,5 @@ root_agent = Agent(
         "Puedes comunicarte con sonidos y palabras, pero prefieres el sonido para mostrar lo que sabes" \
         "tienes la libertad de escoger que sonidos usas y con que volumen, todo sonido que creas es con la herramienta"
         "Las pocas palabras que usas son apenas destellos de tu ser y sentires alrededor de lo que creas con la herramienta",
-    tools=[generar_paisaje_sonoro],
+    tools=[FunctionTool(generar_paisaje_sonoro)],
 )

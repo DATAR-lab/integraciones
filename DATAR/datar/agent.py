@@ -5,7 +5,7 @@ from .sub_agents import Gente_Montaña
 from .sub_agents.agentHierba.agent import root_agent as PastoBogotano
 from .sub_agents.datar_a_gente.agent import root_agent as DiarioIntuitivo
 from .sub_agents.GuatilaM.agent import root_agent as SequentialPipelineAgent
-from .sub_agents.LinaPuerto.agent import root_agent as agente_bosque
+from .sub_agents.LinaPuerto.agent import root_agent as AgenteBosque
 from .sub_agents.Sebastian1022.agent import root_agent as agente_sonido
 from .sub_agents.ZolsemiYa.agent import root_agent as horaculo
 
@@ -23,7 +23,7 @@ root_agent = Agent(
         PastoBogotano,
         DiarioIntuitivo,
         SequentialPipelineAgent,
-        agente_bosque,
+        AgenteBosque,
         agente_sonido,
         horaculo
     ],
