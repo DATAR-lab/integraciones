@@ -1,4 +1,5 @@
 import os
+from dotenv import load_dotenv
 from google.adk.agents.llm_agent import Agent
 from google.adk.models.lite_llm import LiteLlm
 from .sub_agents.Gente_Montaña.agent import root_agent as Gente_Montaña
