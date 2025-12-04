@@ -1,17 +1,18 @@
 """
-Agente re-interpretativa que utiliza agentes paralelos y en bucle
+Agente re-interpretativa que utiliza agentes paralelos
 para generar respuestas enriquecidas.
 """
 import os
 from google.adk.agents.llm_agent import Agent
 from google.adk.models.lite_llm import LiteLlm
-from google.adk.agents import ParallelAgent, SequentialAgent, LoopAgent
+from google.adk.agents import ParallelAgent, SequentialAgent
 from google.genai import types
 from ...agents_utils import get_openrouter_config
 
 from .utils import (
     leer_instrucciones, cambiar_respuesta_emojis, 
-    cambiar_respuesta_textual, cambiar_respuesta_fusionadora
+    cambiar_respuesta_textual, cambiar_respuesta_fusionadora,
+    verificar_estado_fusionador
 )
 
 # ==========
@@ -62,7 +63,7 @@ agente_interprete_textual = Agent(
 )
 
 # ==========
-# Agentes en bucle
+# Agentes paralelos y fusionador
 # ==========
 
 # Agente que ejecuta los agentes en paralelo
@@ -82,19 +83,12 @@ agente_fusionador = Agent(
     name='GenteFusionador',
     description=(
         'Recibe las respuestas de múltiples agentes '
-        'y las combina en una sola respuesta coherente.'
+        'y las combina en una sola respuesta coherente. '
+        'Las respuestas están disponibles en el estado como respuesta_textual y respuesta_emojis.'
     ),
     instruction=leer_instrucciones("ins_merger_agent.md"),
+    before_model_callback=verificar_estado_fusionador,
     after_model_callback=cambiar_respuesta_fusionadora
-)
-
-# Agente que crea un bucle de interpretación paralela 
-# y reinterpretación fusionadora.
-agente_bucle = LoopAgent(
-    name="GenteBucle",
-    sub_agents=[agente_paralelizador, agente_fusionador],
-    max_iterations=2,
-    description="Crea un bucle de interpretación y reinterpretación",
 )
 
 # =======
@@ -117,12 +111,14 @@ agente_re_interpretativa = Agent(
     instruction=leer_instrucciones("ins_re_interpretativa.md"),
 )
 
-# Agente secuencial que primero ejecuta los agentes 
-# en paralelo y luego combina sus respuestas
+# Agente secuencial que ejecuta los agentes paralelos, fusiona las respuestas
+# y luego reinterpreta para el usuario.
+# Eliminamos el LoopAgent ya que con max_iterations=1 no aporta valor
+# y puede causar problemas de estado. Esto reduce las llamadas al API.
 agente_interpretativa_secuencial = SequentialAgent(
     name="GenteInterpretativa",
-    sub_agents=[agente_bucle, agente_re_interpretativa],
-    description="Coordina agentes en paralelo y luego combina sus respuestas."
+    sub_agents=[agente_paralelizador, agente_fusionador, agente_re_interpretativa],
+    description="Coordina agentes paralelos, fusiona respuestas y reinterpreta."
 )
 
 # Agente raíz que se utilizará para interactuar

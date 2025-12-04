@@ -475,7 +475,7 @@ gcloud run services logs read datar-integraciones \
   --limit=50
 ```
 
-**Ejecutar el agente (ejemplo simple):**
+**Ejecutar el agente (ejemplo simple, sin streaming):**
 
 ```bash
 curl -X POST \
@@ -495,6 +495,57 @@ curl -X POST \
     "streaming": false
   }'
 ```
+
+**Ejecutar el agente con streaming (respuestas progresivas):**
+
+Para recibir respuestas en tiempo real mientras se generan, usa `"streaming": true`:
+
+```bash
+curl -X POST \
+  -H "Authorization: Bearer $TOKEN" \
+  -H "Content-Type: application/json" \
+  "$APP_URL/run" \
+  -d '{
+    "app_name": "datar_integraciones",
+    "user_id": "test_user",
+    "session_id": "test_session",
+    "new_message": {
+      "role": "user",
+      "parts": [{
+        "text": "Cuéntame sobre el bosque de la Macarena"
+      }]
+    },
+    "streaming": true
+  }'
+```
+
+**Alternativa: Usar Server-Sent Events (SSE) para streaming:**
+
+Para una mejor experiencia de streaming, puedes usar el endpoint `/run_sse` que utiliza Server-Sent Events:
+
+```bash
+curl -X POST \
+  -H "Authorization: Bearer $TOKEN" \
+  -H "Content-Type: application/json" \
+  "$APP_URL/run_sse" \
+  -d '{
+    "app_name": "datar_integraciones",
+    "user_id": "test_user",
+    "session_id": "test_session",
+    "new_message": {
+      "role": "user",
+      "parts": [{
+        "text": "Cuéntame sobre el bosque de la Macarena"
+      }]
+    }
+  }'
+```
+
+**Nota sobre streaming:**
+- Todos los agentes DATAR ahora soportan streaming automáticamente
+- El streaming permite recibir respuestas progresivamente mientras se generan
+- Los callbacks de los agentes han sido ajustados para ser compatibles con streaming
+- El streaming funciona con todos los agentes: root_agent y todos los sub-agentes
 
 La respuesta incluirá:
 - Texto generado por DATAR (por ejemplo, a través de Gente_Pasto/Sonora/Bosque/Intuitiva).
