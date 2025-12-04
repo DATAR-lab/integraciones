@@ -121,6 +121,20 @@ def exportar_audio(audio_data, samplerate):
         archivo_wav = os.path.join(escritorio, f"{nombre_base}.wav")
         wavfile.write(archivo_wav, samplerate, audio_int16)
         print(f"✓ Audio exportado exitosamente a: {archivo_wav}")
+
+        # Intentar subir a Cloud Storage (opcional)
+        try:
+            from ... import storage_utils
+
+            destino_gcs = f"gente_sonora/audio/{os.path.basename(archivo_wav)}"
+            url_gcs = storage_utils.upload_file_to_gcs(
+                archivo_wav,
+                destino_gcs,
+                content_type="audio/wav",
+            )
+            print(f"🌐 URL Cloud Storage: {url_gcs}")
+        except Exception as e:
+            print(f"⚠️ No se pudo subir a Cloud Storage: {e}")
         
     except Exception as e:
         print(f"✗ Error al exportar audio: {e}")

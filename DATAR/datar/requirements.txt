@@ -22,6 +22,9 @@ python-dotenv>=1.0.0
 # GuatilaM
 google-genai==1.47.0
 
+# Almacenamiento en Google Cloud Storage para medios (.wav, .png)
+google-cloud-storage>=2.18.0
+
 # Sebastian1022 - Agente Sonido (Herramientas de audio, gráficos y composición)
 # Forzar versiones con wheels precompilados para ARM64 Linux
 numpy>=1.26,<3.0

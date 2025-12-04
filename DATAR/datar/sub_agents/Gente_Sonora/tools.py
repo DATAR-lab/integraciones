@@ -405,6 +405,8 @@ def generar_composicion_sonido(especificaciones: str) -> str:
         
         # Guardar el archivo de audio
         ruta_archivo = None
+        url_gcs = None
+        error_gcs = None
         
         if not SCIPY_AVAILABLE:
             return "❌ Error: Se requiere 'scipy' para guardar archivos de audio. Instala con: pip install scipy"
@@ -419,6 +421,19 @@ def generar_composicion_sonido(especificaciones: str) -> str:
             # Exportar directamente a WAV usando scipy
             ruta_archivo = os.path.join(output_dir, f"{nombre_base}.wav")
             wavfile.write(ruta_archivo, sample_rate, audio_int16)
+
+            # Intentar subir a Cloud Storage
+            try:
+                from ... import storage_utils
+
+                destino_gcs = f"gente_sonora/audio/{os.path.basename(ruta_archivo)}"
+                url_gcs = storage_utils.upload_file_to_gcs(
+                    ruta_archivo,
+                    destino_gcs,
+                    content_type="audio/wav",
+                )
+            except Exception as e:
+                error_gcs = str(e)
                 
         except Exception as e:
             return f"❌ Error al guardar archivo de audio: {str(e)}"
@@ -440,7 +455,8 @@ def generar_composicion_sonido(especificaciones: str) -> str:
    • RMS: {np.sqrt(np.mean(audio_data**2)):.4f}
 
 ✅ Archivo guardado exitosamente
-📁 Ruta: {ruta_archivo}
+📁 Ruta local: {ruta_archivo}
+{"🌐 URL Cloud Storage: " + url_gcs if url_gcs else "⚠️ No se pudo subir a Cloud Storage" + (f" ({error_gcs})" if error_gcs else "")}
         """
         
         return salida.strip()

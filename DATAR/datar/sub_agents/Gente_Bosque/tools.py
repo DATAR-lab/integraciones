@@ -542,15 +542,39 @@ def crear_mapa_emocional(descripcion: str) -> str:
             bbox_inches='tight',
             facecolor=color_fondo
         )
-
+        
         # Cerrar la figura para liberar memoria
         plt.close(fig)
 
-        return (
+        # Intentar subir el PNG a Cloud Storage
+        url_gcs = None
+        error_gcs = None
+        try:
+            from ... import storage_utils
+
+            destino_gcs = f"gente_bosque/cartografias/{filename}"
+            url_gcs = storage_utils.upload_file_to_gcs(
+                filepath,
+                destino_gcs,
+                content_type="image/png",
+            )
+        except Exception as e:
+            error_gcs = str(e)
+        
+        mensaje = (
             f"Lugar: Bosque La Macarena (Bogotá)\n"
             f"Emoción interpretada: {emocion_detectada}\n"
-            f"Archivo generado: {filepath}"
+            f"Archivo generado (local): {filepath}\n"
         )
+        if url_gcs:
+            mensaje += f"URL Cloud Storage: {url_gcs}"
+        else:
+            mensaje += (
+                "No se pudo subir a Cloud Storage"
+                + (f" ({error_gcs})" if error_gcs else "")
+            )
+
+        return mensaje
 
     except Exception as e:
         return f"Error al generar la cartografía emocional: {e}"

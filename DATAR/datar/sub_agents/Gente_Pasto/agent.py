@@ -324,7 +324,33 @@ def generar_paisaje_sonoro(
     ruta_archivo = os.path.join(OUTPUT_DIR, nombre_archivo)
     exportar_wav(mezcla, sample_rate, ruta_archivo)
 
-    return ruta_archivo
+    # Intentar subir a Cloud Storage
+    url_gcs = None
+    error_gcs = None
+    try:
+        from ... import storage_utils
+
+        destino_gcs = f"gente_pasto/audio/{nombre_archivo}"
+        url_gcs = storage_utils.upload_file_to_gcs(
+            ruta_archivo,
+            destino_gcs,
+            content_type="audio/wav",
+        )
+    except Exception as e:
+        error_gcs = str(e)
+
+    mensaje = (
+        "Paisaje sonoro generado.\n"
+        f"📁 Archivo local: {ruta_archivo}\n"
+    )
+    if url_gcs:
+        mensaje += f"🌐 URL Cloud Storage: {url_gcs}"
+    else:
+        mensaje += "⚠️ No se pudo subir a Cloud Storage"
+        if error_gcs:
+            mensaje += f" ({error_gcs})"
+
+    return mensaje
 
 # ------- AGENTE --------
 root_agent = Agent(

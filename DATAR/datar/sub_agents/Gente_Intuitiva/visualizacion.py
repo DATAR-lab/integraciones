@@ -502,4 +502,29 @@ def guardar_imagen_texto(texto: str) -> str:
     # Guardar imagen
     imagen.save(ruta_completa, 'PNG')
 
-    return str(ruta_completa)
+    # Intentar subir a Cloud Storage
+    url_gcs = None
+    error_gcs = None
+    try:
+        from ... import storage_utils
+
+        destino_gcs = f"gente_intuitiva/imagenes/{nombre_archivo}"
+        url_gcs = storage_utils.upload_file_to_gcs(
+            str(ruta_completa),
+            destino_gcs,
+            content_type="image/png",
+        )
+    except Exception as e:
+        error_gcs = str(e)
+
+    if url_gcs:
+        return (
+            f"Imagen generada y guardada localmente en: {ruta_completa}\n"
+            f"URL Cloud Storage: {url_gcs}"
+        )
+
+    return (
+        f"Imagen generada y guardada localmente en: {ruta_completa}\n"
+        f"No se pudo subir a Cloud Storage"
+        + (f" ({error_gcs})" if error_gcs else "")
+    )
