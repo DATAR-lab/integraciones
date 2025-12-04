@@ -1,5 +1,6 @@
 # Google ADK - Agent Development Kit
-google-adk>=0.1.0
+# Requiere v1.14.0+ para soporte de App class
+google-adk>=1.14.0
 
 # LiteLLM
 litellm>=1.63.1
