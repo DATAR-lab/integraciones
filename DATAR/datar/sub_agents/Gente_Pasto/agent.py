@@ -13,9 +13,7 @@ config = get_openrouter_config()
 
 # --- Configuración de carpetas --- #
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-SOUNDS_DIR = os.path.join(BASE_DIR, "sounds")   # Carpeta con los archivos de sonido
-OUTPUT_DIR = os.path.join(BASE_DIR, "output")   # Carpeta para guardar los mixes
-os.makedirs(OUTPUT_DIR, exist_ok=True)
+SOUNDS_DIR = os.path.join(BASE_DIR, "sounds")   # Carpeta con los archivos de sonido (solo lectura)
 
 # --- Archivos de sonido locales --- #
 ARCHIVOS_SONIDOS = {

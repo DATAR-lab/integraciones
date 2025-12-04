@@ -100,10 +100,6 @@ def generar_grafico_turtle(descripcion: str) -> str:
         return ascii_grafico
     
     try:
-        # Crear directorio de salida si no existe
-        output_dir = os.path.join(os.path.dirname(__file__), "output")
-        os.makedirs(output_dir, exist_ok=True)
-        
         # Crear figura
         fig, ax = plt.subplots(figsize=(8, 8), facecolor='white')
         ax.set_xlim(-200, 200)
@@ -162,15 +158,55 @@ def generar_grafico_turtle(descripcion: str) -> str:
                 ax.plot([x, x], [-50, -50 + np.random.randint(30, 80)], 
                        color='green', linewidth=3, alpha=0.6)
         
-        # Guardar archivo
+        # Generar nombre de archivo y usar archivo temporal
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         filename = f"grafico_{descripcion.replace(' ', '_')[:20]}_{timestamp}.png"
-        filepath = os.path.join(output_dir, filename)
         
-        plt.savefig(filepath, dpi=100, bbox_inches='tight')
-        plt.close(fig)
+        import tempfile
+        url_gcs = None
+        error_gcs = None
         
-        return f"✅ Gráfico '{descripcion}' generado exitosamente\n📁 Guardado en: {filepath}"
+        try:
+            # Crear archivo temporal
+            with tempfile.NamedTemporaryFile(suffix='.png', delete=False) as temp_file:
+                ruta_temp = temp_file.name
+                plt.savefig(ruta_temp, dpi=100, bbox_inches='tight')
+            
+            plt.close(fig)
+            
+            # Intentar subir a Cloud Storage
+            try:
+                from ... import storage_utils
+                
+                destino_gcs = f"gente_sonora/imagenes/{filename}"
+                url_gcs = storage_utils.upload_file_to_gcs(
+                    ruta_temp,
+                    destino_gcs,
+                    content_type="image/png",
+                )
+                
+                # Eliminar archivo temporal después de subir
+                try:
+                    os.unlink(ruta_temp)
+                except:
+                    pass  # Ignorar errores al eliminar temporal
+                    
+            except Exception as e:
+                error_gcs = str(e)
+                # Intentar eliminar temporal incluso si falló la subida
+                try:
+                    if 'ruta_temp' in locals():
+                        os.unlink(ruta_temp)
+                except:
+                    pass
+        except Exception as e:
+            plt.close(fig)
+            error_gcs = str(e)
+        
+        if url_gcs:
+            return f"✅ Gráfico '{descripcion}' generado exitosamente\n🌐 URL Cloud Storage: {url_gcs}"
+        else:
+            return f"✅ Gráfico '{descripcion}' generado\n⚠️ No se pudo subir a Cloud Storage: {error_gcs if error_gcs else 'Error desconocido'}"
     
     except Exception as e:
         # Si matplotlib falla, usar ASCII art como fallback
