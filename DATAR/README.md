@@ -1,6 +1,6 @@
 # {DATAR} Integraciones
 
-Prototipo construida con **Google ADK (Agent Development Kit)** https://google.github.io/adk-docs/ que coordina múltiples sub-agentes especializados. Cada agente está diseñado para facilitar diferentes formas de interacción y exploración del entorno natural, promoviendo una relación más sensible y relacional con los ecosistemas.
+Prototipo desarrollado con **Google ADK (Agent Development Kit)** https://google.github.io/adk-docs/ que coordina múltiples sub-agentes especializados. Cada agente está diseñado para facilitar diferentes formas de interacción y exploración del entorno natural, promoviendo una relación más sensible y relacional con los ecosistemas.
 
 ## Arquitectura
 
