@@ -7,7 +7,11 @@ Franja Plataforma Satélite de [Plataforma Bogotá](https://plataformabogota.gov
 Laboratorio a cargo de:
 [MangleRojo ORG](https://manglerojo.org) y [LaBosquescuela UBA](https://labosquescuela.org)
 
-Prototipo desarrollado con **Google ADK (Agent Development Kit)** https://google.github.io/adk-docs/ que coordina múltiples sub-agentes especializados. Cada agente está diseñado para facilitar diferentes formas de interacción y exploración del entorno natural, promoviendo una relación más sensible y relacional con los ecosistemas.
+
+![DATAR Web App](DATAR_web-app.png)
+
+
+Prototipo desarrollado con **Google ADK (Agent Development Kit)** https://google.github.io/adk-docs/ que orquesta múltiples sub-agentes especializados. Cada agente está diseñado para facilitar diferentes formas de interacción y exploración del entorno natural, promoviendo una relación más sensible y relacional con los ecosistemas.
 
 ## Arquitectura
 
