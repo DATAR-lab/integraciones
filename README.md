@@ -70,5 +70,5 @@ El agente raíz ayuda a los usuarios a probar y explorar los diferentes sub-agen
 
 ## Contacto
 
-Únete a nuestra comunidad en Discord: [Servidor de {DATAR}](https://discord.gg/ch9Zebzm)
+Únete a nuestra comunidad en Discord: [{DATAR}](https://discord.gg/ch9Zebzm)
 
