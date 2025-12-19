@@ -13,13 +13,6 @@ El sistema está organizado en una arquitectura jerárquica:
 - **Agente Raíz (Gente_Raiz)**: Orquestador principal que gestiona y enruta las interacciones hacia los sub-agentes especializados.
 - **Sub-agentes**: Agentes especializados que ofrecen diferentes perspectivas y herramientas para explorar el entorno.
 
-### Componentes Principales
-
-- **`agent.py`**: Define el agente raíz y la aplicación principal usando Google ADK.
-- **`agents_registry.py`**: Registro de metadatos de los agentes disponibles.
-- **`agents_utils.py`**: Utilidades para configuración de OpenRouter y gestión de variables de entorno.
-- **`storage_utils.py`**: Funciones para subir archivos generados (audio, imágenes) a Google Cloud Storage.
-
 ## Sub-agentes Disponibles
 
 ### 🌄 Gente_Montaña
