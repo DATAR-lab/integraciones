@@ -22,28 +22,28 @@ El prototipo está organizado en una arquitectura jerárquica:
 
 ## Sub-agentes Disponibles
 
-### 🌄 Gente_Montaña
+### Gente_Montaña
 Agente que saluda desde la perspectiva de la montaña.
 
-### 🌱 Gente_Pasto
+### Gente_Pasto
 Exploración de experiencias relacionadas con el pasto y la vegetación.
 
-### 🎨 Gente_Intuitiva
+### Gente_Intuitiva
 Generación de visualizaciones y artefactos visuales basados en percepciones intuitivas del entorno.
 
-### 🔄 Gente_Interpretativa
+### Gente_Interpretativa
 Sistema de interpretación y re-interpretación del entorno usando emojis y texto, con múltiples capas de agentes que procesan y fusionan perspectivas.
 
-### 🌿 Gente_Bosque
+### Gente_Bosque
 Agente especializado en el bosque de la Sede Macarena que guía observaciones sensoriales del entorno, e infiere especies presentes basándose en condiciones ambientales.
 
-### 🔊 Gente_Sonora
+### Gente_Sonora
 Exploración de ambientes sonoros y experiencias auditivas, creando un puente entre múltiples perspectivas sonoras del entorno natural.
 
-### ⏰ Gente_Horaculo
+### Gente_Horaculo
 Agente especializado en aspectos temporales y horarios.
 
-### ♻️ Gente_Compostada
+### Gente_Compostada
 Agente relacionado con procesos de compostaje y ciclos naturales.
 
 ## Configuración
