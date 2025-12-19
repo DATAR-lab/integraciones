@@ -2,7 +2,7 @@
 
 Prototipo de orquestación de agentes autónomos especializados en experiencias sensoriales, ecológicas y artísticas con el entorno natural.
 
-## Descripción General
+## Descripción
 
 {DATAR} Integraciones es un prototipo construida con **Google ADK (Agent Development Kit)** https://google.github.io/adk-docs/ que coordina múltiples sub-agentes especializados. Cada agente está diseñado para facilitar diferentes formas de interacción y exploración del entorno natural, promoviendo una relación más sensible y relacional con los ecosistemas.
 
