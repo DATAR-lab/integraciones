@@ -302,3 +302,4 @@ $RECYCLE.BIN/
 # - Dockerfile (configuración base de Docker)
 # - docker-compose.yml (configuración base de docker-compose, sin override local)
 # - .dockerignore (si existe, para optimizar builds de Docker)
+
