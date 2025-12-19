@@ -19,9 +19,9 @@ El laboratorio se sitúa en el contexto de la **Estructura Ecológica Principal 
 
 Este problema desplaza el foco desde la eficiencia funcional hacia:
 
-* la experiencia,
-* el proceso,
-* la transformación de marcos conceptuales en los participantes.
+* La experiencia,
+* El proceso,
+* La transformación de marcos conceptuales en los participantes.
 
 
 ## 2. Marco conceptual
