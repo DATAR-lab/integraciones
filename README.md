@@ -46,7 +46,7 @@ El laboratorio fue concebido como un **dispositivo pedagógico y experimental**,
 El laboratorio priorizó el proceso por encima del resultado final.
 
 
-## 4. Resultados (más allá del artefacto)
+## 4. Resultados
 
 Los principales resultados del laboratorio son:
 
