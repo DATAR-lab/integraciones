@@ -1,4 +1,4 @@
-# {DATAR}
+# {DATAR} Integraciones
 
 ## Laboratorio de experimentación con datos ambientales basado en la orquestación de agentes autónomos.
 
@@ -7,65 +7,65 @@ Franja Plataforma Satélite de [Plataforma Bogotá](https://plataformabogota.gov
 Laboratorio a cargo de:
 [MangleRojo ORG](https://manglerojo.org) y [LaBosquescuela UBA](https://labosquescuela.org)
 
-![DATAR Plataforma Satélite](DATAR_plataforma_satelite.png)
-[Invitaciones Culturales](https://invitaciones.scrd.gov.co/verInvitacion/938)
+Prototipo desarrollado con **Google ADK (Agent Development Kit)** https://google.github.io/adk-docs/ que coordina múltiples sub-agentes especializados. Cada agente está diseñado para facilitar diferentes formas de interacción y exploración del entorno natural, promoviendo una relación más sensible y relacional con los ecosistemas.
 
-{DATAR] es un **laboratorio de investigación-creación** orientado a explorar cómo los agentes impulsados por modelos de lenguaje (LLM) pueden operar como mediadores de pensamiento ecológico situado, más que como soluciones tecnológicas finalizadas.
+## Arquitectura
 
-El laboratorio se sitúa en el contexto de la **Estructura Ecológica Principal de Bogotá**, entendida no como una capa cartográfica o un sistema de nodos, sino como una **malla viva de trayectorias, huellas y relaciones en devenir**.
+El prototipo está organizado en una arquitectura jerárquica:
 
+- **Agente Raíz (Gente_Raiz)**: Orquestador principal que gestiona y enruta las interacciones hacia los sub-agentes especializados.
+- **Sub-agentes**: Agentes especializados que ofrecen diferentes perspectivas y herramientas para explorar el entorno.
 
-## 1. Problema de investigación
+## Sub-agentes Disponibles
 
-¿Cómo pueden dispositivos socio-técnicos basados en LLM facilitar procesos de aprendizaje y reflexión colectiva sobre el territorio, cuando se diseñan desde una ontología relacional del espacio y del conocimiento?
+### 🌄 Gente_Montaña
+Agente que saluda desde la perspectiva de la montaña.
 
-Este problema desplaza el foco desde la eficiencia funcional hacia:
+### 🌱 Gente_Pasto
+Exploración de experiencias relacionadas con el pasto y la vegetación.
 
-* La experiencia,
-* El proceso,
-* La transformación de marcos conceptuales en los participantes.
+### 🎨 Gente_Intuitiva
+Generación de visualizaciones y artefactos visuales basados en percepciones intuitivas del entorno.
 
+### 🔄 Gente_Interpretativa
+Sistema de interpretación y re-interpretación del entorno usando emojis y texto, con múltiples capas de agentes que procesan y fusionan perspectivas.
 
-## 2. Marco conceptual
+### 🌿 Gente_Bosque
+Agente especializado en el bosque de la Sede Macarena que:
+- Guía observaciones sensoriales del entorno
+- Infiere especies presentes basándose en condiciones ambientales
+- Profundiza en relaciones ecológicas y filosóficas
+- Crea cartografías emocionales del territorio
 
-El laboratorio se fundamenta en:
+### 🔊 Gente_Sonora
+Exploración de ambientes sonoros y experiencias auditivas, creando un puente entre múltiples perspectivas sonoras del entorno natural.
 
-* La noción de *meshwork* de Tim Ingold, donde el territorio se comprende como un entramado de líneas vivas producidas por el movimiento.
-* Enfoques de diseño participativo y transdisciplinar.
-* Investigación-creación como modo de producción de conocimiento situado, donde el hacer es una forma de pensar.
+### ⏰ Gente_Horaculo
+Agente especializado en aspectos temporales y horarios.
 
-Desde este marco, programar no es un fin, sino un **acto de pensamiento material**.
+### ♻️ Gente_Compostada
+Agente relacionado con procesos de compostaje y ciclos naturales.
 
+## Configuración
 
-## 3. Diseño del laboratorio
+### Modelo LLM
 
-El laboratorio fue concebido como un **dispositivo pedagógico y experimental**, en el cual:
+Por defecto, el prototipo utiliza el modelo `minimax-m2` a través de OpenRouter.
 
-* Participantes sin conocimientos previos de programación diseñaron e implementaron comportamientos agénticos.
-* El uso del **Google ADK (Agent Development Kit)** permitió abstraer la complejidad técnica, desplazando la atención hacia la toma de decisiones conceptuales.
-* El aprendizaje emergió a través de la exploración, el error y la conversación colectiva.
+## Funcionalidades
 
-El laboratorio priorizó el proceso por encima del resultado final.
+- **Orquestación de agentes**: El agente raíz enruta automáticamente las interacciones al sub-agente más apropiado.
+- **Generación de medios**: Los agentes pueden generar archivos de audio (`.wav`, `.m4a`, `.mp3`) e imágenes (`.png`) que se almacenan en Cloud Storage.
+- **Herramientas especializadas**: Cada sub-agente tiene acceso a herramientas específicas (por ejemplo, `inferir_especies`, `crear_cartografía_emocional` en Gente_Bosque).
+- **Integración con MCP**: Algunos agentes utilizan Model Context Protocol (MCP) para acceder a recursos externos.
 
+## Uso
 
-## 4. Resultados
+La aplicación se ejecuta como un servicio usando la clase `App` de Google ADK, compatible con:
+- Google Cloud Run
+- API Server local
 
-Los principales resultados del laboratorio son:
-
-* Transformaciones en la manera en que los participantes conciben el territorio urbano y ecológico.
-* Apropiación crítica de tecnologías de inteligencia artificial.
-* Emergencia de un pensamiento relacional sobre la ciudad, alineado con la noción de huella, trayectoria y _entanglement_.
-
-El prototipo desarrollado en el laboratorio funciona como un **objeto-límite**: un sedimento parcial del proceso, no su objetivo central.
-
-
-## 5. Contribución
-
-La contribución principal del laboratorio es:
-
-* Un modelo replicable para explorar los LLM desde perspectivas no extractivas.
-* Un marco pedagógico que permite programar como forma de reflexión territorial.
-* Evidencia de que el diseño puede operar como método de investigación filosófica y ecológica.
+El agente raíz ayuda a los usuarios a probar y explorar los diferentes sub-agentes disponibles en el prototipo.
 
 ---
 
