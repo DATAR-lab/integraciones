@@ -9,10 +9,10 @@ Laboratorio a cargo de:
 
 
 ![DATAR Web App](DATAR_web-app.png)
-[Ver Prototipo](https://datar-integraciones-web-app-dd3vrcpotq-rj.a.run.app/)
+[Ver prototipo web](https://datar-integraciones-web-app-dd3vrcpotq-rj.a.run.app/)
 
 
-Prototipo desarrollado con **Google ADK (Agent Development Kit)** https://google.github.io/adk-docs/ que orquesta múltiples sub-agentes especializados. Cada agente está diseñado para facilitar diferentes formas de interacción y exploración del entorno natural, promoviendo una relación más sensible y relacional con los ecosistemas.
+Prototipo desarrollado con **Google ADK [(Agent Development Kit)](https://google.github.io/adk-docs/)** que orquesta múltiples sub-agentes especializados. Cada agente está diseñado para facilitar diferentes formas de interacción y exploración del entorno natural, promoviendo una relación más sensible y relacional con los ecosistemas.
 
 ## Arquitectura
 
@@ -68,6 +68,7 @@ La aplicación se ejecuta como un servicio usando la clase `App` de Google ADK, 
 
 El agente raíz ayuda a los usuarios a probar y explorar los diferentes sub-agentes disponibles en el prototipo.
 
----
+## Contacto
 
-Bogotá | Noviembre 2025
+Únete a nuestra comunidad en Discord: [Servidor de {DATAR}](https://discord.gg/ch9Zebzm)
+
