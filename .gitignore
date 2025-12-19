@@ -290,15 +290,3 @@ $RECYCLE.BIN/
 *.db
 *.sqlite3
 
-# ==============================================================================
-# Notas
-# ==============================================================================
-# Los siguientes archivos/directorios SÍ deben estar en el repositorio:
-# - DATAR/datar/sub_agents/*/sounds/*.wav (archivos WAV de referencia - trackeados explícitamente)
-# - DATAR/datar/sub_agents/*/pdfs/ (PDFs de referencia)
-# - DATAR/datar/sub_agents/*/README.md (documentación)
-# - DATAR/requirements.txt (dependencias)
-# - Código fuente .py (excepto __pycache__)
-# - Dockerfile (configuración base de Docker)
-# - docker-compose.yml (configuración base de docker-compose, sin override local)
-# - .dockerignore (si existe, para optimizar builds de Docker)
