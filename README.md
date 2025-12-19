@@ -35,11 +35,7 @@ Generación de visualizaciones y artefactos visuales basados en percepciones int
 Sistema de interpretación y re-interpretación del entorno usando emojis y texto, con múltiples capas de agentes que procesan y fusionan perspectivas.
 
 ### 🌿 Gente_Bosque
-Agente especializado en el bosque de la Sede Macarena que:
-- Guía observaciones sensoriales del entorno
-- Infiere especies presentes basándose en condiciones ambientales
-- Profundiza en relaciones ecológicas y filosóficas
-- Crea cartografías emocionales del territorio
+Agente especializado en el bosque de la Sede Macarena que guía observaciones sensoriales del entorno, e infiere especies presentes basándose en condiciones ambientales.
 
 ### 🔊 Gente_Sonora
 Exploración de ambientes sonoros y experiencias auditivas, creando un puente entre múltiples perspectivas sonoras del entorno natural.
