@@ -1,14 +1,14 @@
-# {DATAR}
+# {DATAR} Integraciones
 
-Sistema de orquestación de agentes autónomos especializados en experiencias sensoriales, ecológicas y artísticas con el entorno natural.
+Prototipo de orquestación de agentes autónomos especializados en experiencias sensoriales, ecológicas y artísticas con el entorno natural.
 
 ## Descripción General
 
-{DATAR} es una aplicación construida con **Google ADK (Agent Development Kit)** https://google.github.io/adk-docs/ que coordina múltiples sub-agentes especializados. Cada agente está diseñado para facilitar diferentes formas de interacción y exploración del entorno natural, promoviendo una relación más sensible y relacional con los ecosistemas.
+{DATAR} Integraciones es un prototipo construida con **Google ADK (Agent Development Kit)** https://google.github.io/adk-docs/ que coordina múltiples sub-agentes especializados. Cada agente está diseñado para facilitar diferentes formas de interacción y exploración del entorno natural, promoviendo una relación más sensible y relacional con los ecosistemas.
 
 ## Arquitectura
 
-El sistema está organizado en una arquitectura jerárquica:
+El prototipo está organizado en una arquitectura jerárquica:
 
 - **Agente Raíz (Gente_Raiz)**: Orquestador principal que gestiona y enruta las interacciones hacia los sub-agentes especializados.
 - **Sub-agentes**: Agentes especializados que ofrecen diferentes perspectivas y herramientas para explorar el entorno.
@@ -47,7 +47,7 @@ Agente relacionado con procesos de compostaje y ciclos naturales.
 
 ### Modelo LLM
 
-Por defecto, el sistema utiliza el modelo `openrouter/minimax/minimax-m2` a través de OpenRouter.
+Por defecto, el prototipo utiliza el modelo `minimax-m2` a través de OpenRouter.
 
 ## Funcionalidades
 
@@ -62,4 +62,4 @@ La aplicación se ejecuta como un servicio usando la clase `App` de Google ADK, 
 - Google Cloud Run
 - API Server local
 
-El agente raíz ayuda a los usuarios a probar y explorar los diferentes sub-agentes disponibles en el sistema.
+El agente raíz ayuda a los usuarios a probar y explorar los diferentes sub-agentes disponibles en el prototipo.
