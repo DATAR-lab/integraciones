@@ -60,14 +60,6 @@ Por defecto, el prototipo utiliza el modelo `minimax-m2` a través de OpenRouter
 - **Herramientas especializadas**: Cada sub-agente tiene acceso a herramientas específicas (por ejemplo, `inferir_especies`, `crear_cartografía_emocional` en Gente_Bosque).
 - **Integración con MCP**: Algunos agentes utilizan Model Context Protocol (MCP) para acceder a recursos externos.
 
-## Uso
-
-La aplicación se ejecuta como un servicio usando la clase `App` de Google ADK, compatible con:
-- Google Cloud Run
-- API Server local
-
-El agente raíz ayuda a los usuarios a probar y explorar los diferentes sub-agentes disponibles en el prototipo.
-
 ## Contacto
 
 Únete a nuestra comunidad en Discord: [{DATAR}](https://discord.gg/ch9Zebzm)
