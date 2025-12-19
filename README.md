@@ -54,7 +54,7 @@ Los principales resultados del laboratorio son:
 * Apropiación crítica de tecnologías de inteligencia artificial.
 * Emergencia de un pensamiento relacional sobre la ciudad, alineado con la noción de huella, trayectoria y _entanglement_.
 
-La aplicación agéntica desarrollada funciona como un **objeto-límite**: un sedimento parcial del proceso, no su objetivo central.
+El prototipo desarrollado en el laboratorio funciona como un **objeto-límite**: un sedimento parcial del proceso, no su objetivo central.
 
 
 ## 5. Contribución
