@@ -8,6 +8,7 @@ Laboratorio a cargo de:
 [MangleRojo ORG](https://manglerojo.org) y [LaBosquescuela UBA](https://labosquescuela.org)
 
 ![DATAR Plataforma Satélite](DATAR_plataforma_satelite.png)
+[Invitaciones Culturales](https://invitaciones.scrd.gov.co/verInvitacion/938)
 
 {DATAR] es un **laboratorio de investigación-creación** orientado a explorar cómo los agentes impulsados por modelos de lenguaje (LLM) pueden operar como mediadores de pensamiento ecológico situado, más que como soluciones tecnológicas finalizadas.
 
