@@ -69,4 +69,4 @@ La contribución principal del laboratorio es:
 
 ---
 
-Noviembre 2025
+Bogotá | Noviembre 2025
