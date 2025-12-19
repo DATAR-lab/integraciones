@@ -64,3 +64,7 @@ La contribución principal del laboratorio es:
 * Un modelo replicable para explorar los LLM desde perspectivas no extractivas.
 * Un marco pedagógico que permite programar como forma de reflexión territorial.
 * Evidencia de que el diseño puede operar como método de investigación filosófica y ecológica.
+
+---
+
+Noviembre 2025
