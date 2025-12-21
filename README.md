@@ -24,7 +24,7 @@ Laboratorio a cargo de:
 
 ---
 
-{DATAR] es un **laboratorio de investigación-creación** orientado a explorar cómo los agentes impulsados por modelos de lenguaje (LLM) pueden operar como procesos de pensamiento ecológico situado, más que como soluciones tecnológicas finalizadas.
+{DATAR] es un **laboratorio de investigación-creación** orientado a explorar cómo los agentes impulsados por grandes modelos de lenguaje (LLM) pueden operar como procesos de pensamiento ecológico situado, más que como soluciones tecnológicas finalizadas.
 
 El laboratorio se sitúa en el contexto de la **Estructura Ecológica Principal de Bogotá**, entendida no como una capa cartográfica o un sistema de nodos, sino como una **malla viva de trayectorias, huellas y relaciones en devenir**.
 
