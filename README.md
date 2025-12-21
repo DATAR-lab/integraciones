@@ -84,7 +84,7 @@ La contribución principal del laboratorio es:
 
 ## Contacto
 
-Únete a nuestra comunidad en Discord: [{DATAR}](https://discord.gg/ch9Zebzm)
+Únase a nuestra comunidad en Discord: [{DATAR}](https://discord.gg/ch9Zebzm)
 
 ## Licencia
 

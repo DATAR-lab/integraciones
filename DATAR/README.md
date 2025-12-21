@@ -74,7 +74,7 @@ Por defecto, el prototipo utiliza el modelo `minimax-m2` a través de OpenRouter
 
 ## Contacto
 
-Únete a nuestra comunidad en Discord: [{DATAR}](https://discord.gg/ch9Zebzm)
+Únase a nuestra comunidad en Discord: [{DATAR}](https://discord.gg/ch9Zebzm)
 
 ## Licencia
 
