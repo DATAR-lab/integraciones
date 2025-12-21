@@ -162,7 +162,7 @@ Para ejecutar el proyecto localmente:
 ## Funcionalidades
 
 - **Orquestación de agentes**: El agente raíz enruta automáticamente las interacciones al sub-agente más apropiado.
-- **Generación de medios**: Los agentes pueden generar archivos de audio (`.wav`, `.m4a`, `.mp3`) e imágenes (`.png`) que se almacenan en Cloud Storage.
+- **Generación de medios**: Los agentes pueden generar archivos de audio `.wav` e imágenes `.png`.
 - **Herramientas especializadas**: Cada sub-agente tiene acceso a herramientas específicas (por ejemplo, `inferir_especies`, `crear_cartografía_emocional` en Gente_Bosque).
 
 ## Contacto
