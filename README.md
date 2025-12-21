@@ -53,10 +53,10 @@ El laboratorio se fundamenta en:
 
 ## 3. Diseño del laboratorio
 
-El laboratorio fue concebido como un **experimento**, en el cual:
+El laboratorio fue concebido como un experimento, en el cual:
 
 * Participantes sin conocimientos previos en programación con LLM diseñaron e implementaron comportamientos agénticos.
-* El uso del **Google ADK (Agent Development Kit)** permitió abstraer la complejidad técnica, desplazando la atención hacia la toma de decisiones conceptuales.
+* El uso del Google ADK (Agent Development Kit) permitió abstraer la complejidad técnica, desplazando la atención hacia la toma de decisiones conceptuales.
 * El aprendizaje emergió a través de la exploración, el error y la conversación colectiva.
 
 
