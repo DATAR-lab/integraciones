@@ -76,6 +76,6 @@ Por defecto, el prototipo utiliza el modelo `minimax-m2` a través de OpenRouter
 
 Únete a nuestra comunidad en Discord: [{DATAR}](https://discord.gg/ch9Zebzm)
 
-## License
+## Licencia
 
 Este proyecto está licenciado bajo la licencia Apache 2.0 - ver [LICENSE](LICENSE) para detalles.

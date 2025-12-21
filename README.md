@@ -86,6 +86,6 @@ La contribución principal del laboratorio es:
 
 Únete a nuestra comunidad en Discord: [{DATAR}](https://discord.gg/ch9Zebzm)
 
-## License
+## Licencia
 
 Este proyecto está licenciado bajo la licencia Apache 2.0 - ver [LICENSE](LICENSE) para detalles.
