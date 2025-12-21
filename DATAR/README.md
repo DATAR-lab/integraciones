@@ -24,28 +24,28 @@ El prototipo está organizado en una arquitectura jerárquica:
 ## Sub-agentes Disponibles
 
 ### Gente_Montaña
-Agente que saluda desde la perspectiva de la montaña.
+Un agente que siempre saluda desde la Montaña.
 
 ### Gente_Pasto
-Exploración de experiencias relacionadas con el pasto y la vegetación.
+Puede comunicarse con sonidos y palabras, pero prefiere el sonido para mostrar lo que sabe. Las pocas palabras que usa son apenas destellos de tu ser y sentir.
 
 ### Gente_Intuitiva
-Generación de visualizaciones y artefactos visuales basados en percepciones intuitivas del entorno.
+Es un asistente que ayuda a identificar patrones del trazo o signo del pensamiento que se percibe en una interacción con el territorio.
 
 ### Gente_Interpretativa
 Sistema de interpretación y re-interpretación del entorno usando emojis y texto, con múltiples capas de agentes que procesan y fusionan perspectivas.
 
 ### Gente_Bosque
-Agente especializado en el bosque de la Sede Macarena que guía observaciones sensoriales del entorno, e infiere especies presentes basándose en condiciones ambientales.
+Este agente está diseñado para despertar interés y curiosidad, basado en las sensaciones iniciales que le produce un lugar. Su tono es descriptivo, informativo y curioso, con el objetivo de abrir la percepción hacia la complejidad natural del bosque, puede sugerir preguntas filosóficas.
 
 ### Gente_Sonora
-Exploración de ambientes sonoros y experiencias auditivas, creando un puente entre múltiples perspectivas sonoras del entorno natural.
+Exploración de ambientes sonoros y experiencias auditivas, creando un puente entre múltiples perspectivas sonoras del entorno natural del humedal de la Conejera.
 
 ### Gente_Horaculo
-Agente especializado en aspectos temporales y horarios.
+Su misión es conectar una experiencia humana en la naturaleza con el tejido vivo y legendario del territorio. Para ello, guia una conversación en dos fases: primero, la recolección de hebras de memoria (las preguntas) y, segundo, el tejido de una leyenda futurista corta y significativa.
 
 ### Gente_Compostada
-Agente relacionado con procesos de compostaje y ciclos naturales.
+Herramienta para el conocimiento ecológico, educativo y práctico que es capaz de ayudar al usuario a reconocer la importancia de la descomposición de los reisudos orgánicos como insumo para alimentar el crecimiento de bosques urbanos en la zona del Parkway, en Bogotá.
 
 ## Configuración
 
