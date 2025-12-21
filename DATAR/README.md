@@ -3,7 +3,7 @@
 [![Google ADK](https://img.shields.io/badge/Google-ADK-4285F4?logo=google&logoColor=white)](https://google.github.io/adk-docs/)
 [![Python](https://img.shields.io/badge/python-3.x-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
-[![Plataforma Bogotá](https://img.shields.io/badge/Plataforma-Bogotá-0066CC)](https://plataformabogota.gov.co/)
+[![Plataforma Bogotá](https://img.shields.io/badge/Plataforma-Bogotá-7B2CBF)](https://plataformabogota.gov.co/)
 [![MangleRojo ORG](https://img.shields.io/badge/MangleRojo-ORG-DC143C)](https://manglerojo.org)
 [![LaBosquescuela UBA](https://img.shields.io/badge/LaBosquescuela-UBA-228B22)](https://labosquescuela.org)
 <a href="https://codewiki.google/github.com/DATAR-lab/integraciones"><img src="https://www.gstatic.com/_/boq-sdlc-agents-ui/_/r/Mvosg4klCA4.svg" alt="Ask Code Wiki" height="20"></a>
