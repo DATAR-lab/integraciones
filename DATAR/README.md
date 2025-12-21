@@ -155,7 +155,7 @@ Para ejecutar el proyecto localmente:
    
    Luego, abre tu navegador y navega a `http://localhost:8000` para acceder a la interfaz web interactiva.
    
-   Para más detalles sobre estas herramientas, consulta la [documentación oficial de Google ADK](https://google.github.io/adk-docs/).
+   Para más detalles sobre estas herramientas, consulta la [documentación oficial de Google ADK](https://google.github.io/adk-docs/get-started/python/).
 
 ## Funcionalidades
 
