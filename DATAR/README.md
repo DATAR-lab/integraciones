@@ -86,8 +86,7 @@ DATAR/datar/
     │   └── instrucciones/      # Instrucciones para sub-agentes internos
     ├── Gente_Bosque/
     │   ├── agent.py
-    │   ├── tools.py            # Herramientas especializadas (cartografía, inferencia)
-    │   └── MCP/                # Servidor MCP para recursos externos
+    │   └── tools.py            # Herramientas especializadas (cartografía, inferencia)recursos externos
     ├── Gente_Sonora/
     │   ├── agent.py
     │   └── tools.py            # Herramientas de procesamiento de audio
