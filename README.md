@@ -28,7 +28,7 @@ Laboratorio a cargo de:
 
 El laboratorio se sitúa en el contexto de la **Estructura Ecológica Principal de Bogotá**, entendida no como una capa cartográfica o un sistema de nodos, sino como una **malla viva de trayectorias, huellas y relaciones en devenir**.
 
-Este laboratorio combinó a lo largo de un mes (1) la perspectiva filosófica de [Tim Ingold](https://www.timingold.com/) —quien concibe al mundo como un entramado de lineas de vida que se enredan unas con otras—, con (2) trabajo de campo en el [Humedal la Conejera en Bogotá](https://www.ambientebogota.gov.co/humedal-la-conejera), y (3) un proceso de programación de agentes autónomos utilizando el [Google ADK](https://google.github.io/adk-docs/get-started/python/).
+Este laboratorio combinó a lo largo de un mes (1) la perspectiva filosófica de **[Tim Ingold](https://www.timingold.com/)** —quien concibe al mundo como un entramado de lineas de vida que se enredan unas con otras—, con (2) trabajo de campo en el **[Humedal la Conejera en Bogotá](https://www.ambientebogota.gov.co/humedal-la-conejera)**, y (3) un proceso de programación de agentes autónomos utilizando el **[Google ADK](https://google.github.io/adk-docs/get-started/python/)**.
 
 
 ## 1. Problema de investigación
