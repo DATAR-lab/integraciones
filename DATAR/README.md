@@ -123,13 +123,12 @@ Para ejecutar el proyecto localmente:
 
 2. **Instalar dependencias**:
    ```bash
-   cd datar
-   pip install -r requirements.txt
+   pip install -r datar/requirements.txt
    ```
 
 3. **Configurar variables de entorno**:
    
-   Crea un archivo `.env` en el directorio `DATAR/` con tu clave de API de OpenRouter:
+   Crea un archivo `.env` en el directorio `DATAR/datar/` con tu clave de API de OpenRouter:
    ```env
    OPENROUTER_API_KEY=tu_clave_api_aqui
    ```
@@ -142,7 +141,6 @@ Para ejecutar el proyecto localmente:
    
    Ejecuta desde el directorio del proyecto:
    ```bash
-   cd DATAR
    adk run datar
    ```
    
@@ -152,7 +150,6 @@ Para ejecutar el proyecto localmente:
    
    Inicia una interfaz web para interactuar con los agentes de manera visual:
    ```bash
-   cd DATAR
    adk web --port 8000
    ```
    
