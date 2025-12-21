@@ -19,7 +19,7 @@ Laboratorio a cargo de:
 ![DATAR Web App](../docs/images/DATAR_web-app.png)
 
 **Vínculos importantes:**
-- **[Web](datar-lab.github.io/integraciones/)**
+- **[Web](https://datar-lab.github.io/integraciones/)**
 - **[Prototipo](https://datar-integraciones-web-app-dd3vrcpotq-rj.a.run.app/)**
 - **[Invitaciones Culturales](https://invitaciones.scrd.gov.co/verInvitacion/938)**
 
