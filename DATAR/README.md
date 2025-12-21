@@ -71,7 +71,6 @@ Por defecto, el prototipo utiliza el modelo `minimax-m2` a través de OpenRouter
 - **Orquestación de agentes**: El agente raíz enruta automáticamente las interacciones al sub-agente más apropiado.
 - **Generación de medios**: Los agentes pueden generar archivos de audio (`.wav`, `.m4a`, `.mp3`) e imágenes (`.png`) que se almacenan en Cloud Storage.
 - **Herramientas especializadas**: Cada sub-agente tiene acceso a herramientas específicas (por ejemplo, `inferir_especies`, `crear_cartografía_emocional` en Gente_Bosque).
-- **Integración con MCP**: Algunos agentes utilizan Model Context Protocol (MCP) para acceder a recursos externos.
 
 ## Contacto
 
