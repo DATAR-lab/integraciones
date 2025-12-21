@@ -11,17 +11,17 @@
 
 ## Laboratorio de experimentación con datos ambientales basado en la orquestación de agentes autónomos.
 
-Franja Plataforma Satélite de [Plataforma Bogotá](https://plataformabogota.gov.co/).
+Franja Plataforma Satélite de **[Plataforma Bogotá](https://plataformabogota.gov.co/)**.
 
 Laboratorio a cargo de:
-[MangleRojo ORG](https://manglerojo.org) y [LaBosquescuela UBA](https://labosquescuela.org)
+**[MangleRojo ORG](https://manglerojo.org)** y **[LaBosquescuela UBA](https://labosquescuela.org)**
 
 ![DATAR Plataforma Satélite](docs/images/DATAR_plataforma_satelite.jpg)
 
 **Vínculos importantes:**
-- [Web](datar-lab.github.io/integraciones/)
-- [Prototipo](https://datar-integraciones-web-app-dd3vrcpotq-rj.a.run.app/)
-- [Invitaciones Culturales](https://invitaciones.scrd.gov.co/verInvitacion/938)
+- **[Web](datar-lab.github.io/integraciones/)**
+- **[Prototipo](https://datar-integraciones-web-app-dd3vrcpotq-rj.a.run.app/)**
+- **[Invitaciones Culturales](https://invitaciones.scrd.gov.co/verInvitacion/938)**
 
 ---
 
