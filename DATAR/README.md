@@ -148,17 +148,17 @@ Para ejecutar el proyecto localmente:
    
    Esto iniciará una sesión interactiva en la terminal donde podrás interactuar con el sistema multiagente directamente.
    
-   **Opción 2 - Servidor API con uvicorn**:
+   **Opción 2 - Interfaz web con `adk web`**:
    
-   Para ejecutar como servidor API REST (recomendado para integración con frontend):
+   Inicia una interfaz web para interactuar con los agentes de manera visual:
    ```bash
    cd DATAR
-   uvicorn datar.agent:app --reload --host 0.0.0.0 --port 8000
+   adk web --port 8000
    ```
    
-   El servidor estará disponible en `http://localhost:8000` y expondrá endpoints REST para la interacción programática con el sistema multiagente.
-
-
+   Luego, abre tu navegador y navega a `http://localhost:8000` para acceder a la interfaz web interactiva.
+   
+   Para más detalles sobre estas herramientas, consulta la [documentación oficial de Google ADK](https://google.github.io/adk-docs/).
 
 ## Funcionalidades
 
