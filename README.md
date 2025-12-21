@@ -1,5 +1,13 @@
 # {DATAR}
 
+[![Google ADK](https://img.shields.io/badge/Google-ADK-4285F4?logo=google&logoColor=white)](https://google.github.io/adk-docs/)
+[![Python](https://img.shields.io/badge/python-3.x-blue.svg)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+[![MangleRojo ORG](https://img.shields.io/badge/MangleRojo-ORG-DC143C)](https://manglerojo.org)
+[![LaBosquescuela UBA](https://img.shields.io/badge/LaBosquescuela-UBA-228B22)](https://labosquescuela.org)
+<a href="https://codewiki.google/github.com/DATAR-lab/integraciones"><img src="https://www.gstatic.com/_/boq-sdlc-agents-ui/_/r/Mvosg4klCA4.svg" alt="Ask Code Wiki" height="20"></a>
+
+
 ## Laboratorio de experimentación con datos ambientales basado en la orquestación de agentes autónomos.
 
 Franja Plataforma Satélite de [Plataforma Bogotá](https://plataformabogota.gov.co/).
@@ -8,7 +16,13 @@ Laboratorio a cargo de:
 [MangleRojo ORG](https://manglerojo.org) y [LaBosquescuela UBA](https://labosquescuela.org)
 
 ![DATAR Plataforma Satélite](docs/images/DATAR_plataforma_satelite.jpg)
-[Invitaciones Culturales](https://invitaciones.scrd.gov.co/verInvitacion/938)
+
+**Vínculos importantes:**
+- [Web](datar-lab.github.io/integraciones/)
+- [Prototipo](https://datar-integraciones-web-app-dd3vrcpotq-rj.a.run.app/)
+- [Invitaciones Culturales](https://invitaciones.scrd.gov.co/verInvitacion/938)
+
+---
 
 {DATAR] es un **laboratorio de investigación-creación** orientado a explorar cómo los agentes impulsados por modelos de lenguaje (LLM) pueden operar como mediadores de pensamiento ecológico situado, más que como soluciones tecnológicas finalizadas.
 
@@ -70,3 +84,7 @@ La contribución principal del laboratorio es:
 ## Contacto
 
 Únete a nuestra comunidad en Discord: [{DATAR}](https://discord.gg/ch9Zebzm)
+
+## License
+
+Este proyecto está licenciado bajo la licencia Apache 2.0 - ver [LICENSE](LICENSE) para detalles.
