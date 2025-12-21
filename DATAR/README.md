@@ -6,7 +6,6 @@
 [![Plataforma Bogotá](https://img.shields.io/badge/Plataforma-Bogotá-7B2CBF)](https://plataformabogota.gov.co/)
 [![MangleRojo ORG](https://img.shields.io/badge/MangleRojo-ORG-DC143C)](https://manglerojo.org)
 [![LaBosquescuela UBA](https://img.shields.io/badge/LaBosquescuela-UBA-228B22)](https://labosquescuela.org)
-<a href="https://codewiki.google/github.com/DATAR-lab/integraciones"><img src="https://www.gstatic.com/_/boq-sdlc-agents-ui/_/r/Mvosg4klCA4.svg" alt="Ask Code Wiki" height="20"></a>
 
 
 ## Laboratorio de experimentación con datos ambientales basado en la orquestación de agentes autónomos.
@@ -62,9 +61,104 @@ Herramienta para el conocimiento ecológico, educativo y práctico que es capaz 
 
 ## Configuración
 
+### Estructura de Orquestación
+
+El sistema de orquestación está organizado dentro de `DATAR/datar` de la siguiente manera:
+
+```
+DATAR/datar/
+├── agent.py                    # Agente raíz (Gente_Raiz) y configuración de App
+├── agents_utils.py             # Utilidades para configuración (OpenRouter)
+├── agents_registry.py          # Registro de agentes disponibles
+├── storage_utils.py            # Utilidades para almacenamiento en Cloud Storage
+├── requirements.txt            # Dependencias del proyecto
+└── sub_agents/                 # Sub-agentes especializados
+    ├── Gente_Montaña/
+    │   └── agent.py
+    ├── Gente_Pasto/
+    │   ├── agent.py
+    │   └── sounds/             # Archivos de audio de referencia
+    ├── Gente_Intuitiva/
+    │   ├── agent.py
+    │   └── visualizacion.py    # Herramientas de visualización
+    ├── Gente_Interpretativa/
+    │   ├── agent.py            # Agente secuencial con paralelización
+    │   └── instrucciones/      # Instrucciones para sub-agentes internos
+    ├── Gente_Bosque/
+    │   ├── agent.py
+    │   ├── tools.py            # Herramientas especializadas (cartografía, inferencia)
+    │   └── MCP/                # Servidor MCP para recursos externos
+    ├── Gente_Sonora/
+    │   ├── agent.py
+    │   └── tools.py            # Herramientas de procesamiento de audio
+    ├── Gente_Horaculo/
+    │   └── agent.py
+    └── Gente_Compostada/
+        └── agent.py
+```
+
+
+
 ### Modelo LLM
 
 Por defecto, el prototipo utiliza el modelo `minimax-m2` a través de OpenRouter.
+
+### Prueba Local
+
+Para ejecutar el proyecto localmente:
+
+1. **Crear y activar entorno virtual**:
+   ```bash
+   cd DATAR
+   python -m venv .venv
+   
+   # Activar el entorno virtual
+   # En macOS/Linux:
+   source .venv/bin/activate
+   # En Windows CMD:
+   .venv\Scripts\activate.bat
+   # En Windows PowerShell:
+   .venv\Scripts\Activate.ps1
+   ```
+
+2. **Instalar dependencias**:
+   ```bash
+   cd datar
+   pip install -r requirements.txt
+   ```
+
+3. **Configurar variables de entorno**:
+   
+   Crea un archivo `.env` en el directorio `DATAR/` con tu clave de API de OpenRouter:
+   ```env
+   OPENROUTER_API_KEY=tu_clave_api_aqui
+   ```
+
+4. **Ejecutar la orquestación**:
+   
+   El proyecto utiliza Google ADK con la clase `App`. Puedes ejecutarlo de las siguientes formas:
+   
+   **Opción 1 - Modo interactivo con `adk run`**:
+   
+   Ejecuta desde el directorio del proyecto:
+   ```bash
+   cd DATAR
+   adk run datar
+   ```
+   
+   Esto iniciará una sesión interactiva en la terminal donde podrás interactuar con el sistema multiagente directamente.
+   
+   **Opción 2 - Servidor API con uvicorn**:
+   
+   Para ejecutar como servidor API REST (recomendado para integración con frontend):
+   ```bash
+   cd DATAR
+   uvicorn datar.agent:app --reload --host 0.0.0.0 --port 8000
+   ```
+   
+   El servidor estará disponible en `http://localhost:8000` y expondrá endpoints REST para la interacción programática con el sistema multiagente.
+
+
 
 ## Funcionalidades
 

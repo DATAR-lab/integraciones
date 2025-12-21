@@ -6,7 +6,6 @@
 [![Plataforma Bogotá](https://img.shields.io/badge/Plataforma-Bogotá-7B2CBF)](https://plataformabogota.gov.co/)
 [![MangleRojo ORG](https://img.shields.io/badge/MangleRojo-ORG-DC143C)](https://manglerojo.org)
 [![LaBosquescuela UBA](https://img.shields.io/badge/LaBosquescuela-UBA-228B22)](https://labosquescuela.org)
-<a href="https://codewiki.google/github.com/DATAR-lab/integraciones"><img src="https://www.gstatic.com/_/boq-sdlc-agents-ui/_/r/Mvosg4klCA4.svg" alt="Ask Code Wiki" height="20"></a>
 
 
 ## Laboratorio de experimentación con datos ambientales basado en la orquestación de agentes autónomos.
