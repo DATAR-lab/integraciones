@@ -115,8 +115,10 @@ Para ejecutar el proyecto localmente:
    # Activar el entorno virtual
    # En macOS/Linux:
    source .venv/bin/activate
+   
    # En Windows CMD:
    .venv\Scripts\activate.bat
+   
    # En Windows PowerShell:
    .venv\Scripts\Activate.ps1
    ```
