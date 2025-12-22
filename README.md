@@ -16,7 +16,6 @@ Laboratorio a cargo de:
 **[MangleRojo ORG](https://manglerojo.org)** y **[LaBosquescuela UBA](https://labosquescuela.org)**
 
 ![DATAR Plataforma Satélite](docs/images/DATAR_plataforma_satelite.jpg)
-*Imagen original por LaBosquescuela UBA*
 
 **Vínculos importantes:**
 - **[Web](https://datar-lab.github.io/integraciones/)**
