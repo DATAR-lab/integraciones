@@ -4,7 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{DATAR}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;700&family=Anton&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
+        @font-face {
+            font-family: 'Bayside Demo';
+            src: url('fonts/BaysideDemo-Regular.woff2') format('woff2'),
+                 url('fonts/BaysideDemo-Regular.woff') format('woff'),
+                 url('fonts/BaysideDemo-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
         * {
             margin: 0;
             padding: 0;
@@ -12,13 +24,18 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            background-color: #f5f5f0;
+            background-image: url('images/DATAR_ent.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #333;
         }
 
         .container {
@@ -27,15 +44,22 @@
         }
 
         h1 {
+            font-family: 'Bayside Demo', 'Yanone Kaffeesatz', 'Anton', sans-serif;
             font-size: 4rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
             margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            color: #545454;
+            text-shadow: none;
             animation: fadeIn 1s ease-in;
         }
 
         p {
+            font-family: 'Open Sans', sans-serif;
             font-size: 1.5rem;
-            opacity: 0.9;
+            font-weight: 300;
+            color: #f5f5dc;
+            opacity: 0.95;
             animation: fadeIn 1.5s ease-in;
         }
 
@@ -54,7 +78,6 @@
 <body>
     <div class="container">
         <h1>{DATAR}</h1>
-        <p>En desarrollo... por ahora</p>
     </div>
 </body>
 </html>
