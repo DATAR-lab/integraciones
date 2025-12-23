@@ -223,23 +223,6 @@ section:nth-child(even) {
     margin-top: 3rem;
 }
 
-.about-img {
-    width: 100%;
-    aspect-ratio: 4/3;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: var(--shadow-soft);
-    border: 2px solid #fff;
-    transition: transform 0.3s ease;
-    filter: grayscale(0.3);
-    display: block;
-}
-
-.about-img:hover {
-    transform: scale(1.02);
-    filter: grayscale(0);
-}
-
 /* Gallery Section */
 .gallery-intro {
     max-width: 100%;
