@@ -216,6 +216,32 @@ section:nth-child(even) {
     box-shadow: var(--shadow-soft);
 }
 
+.about-highlight p {
+    margin-bottom: 1rem;
+    font-style: normal;
+}
+
+.about-highlight ul {
+    margin: 0;
+    padding-left: 1.5rem;
+    font-style: normal;
+    list-style-type: disc;
+}
+
+.about-highlight li {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+}
+
+.about-highlight li:last-child {
+    margin-bottom: 0;
+}
+
+.about-highlight strong {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
 .about-images {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
