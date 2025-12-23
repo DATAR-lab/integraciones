@@ -330,6 +330,23 @@ section:nth-child(even) {
 }
 
 /* Prototype Section */
+.prototype-featured-img {
+    margin: 0 auto 3rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+    border: 4px solid #fff;
+    aspect-ratio: 21 / 9;
+    width: 100%;
+}
+
+.prototype-featured-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
 .prototype-content {
     max-width: 1000px;
     margin: 0 auto;
@@ -581,15 +598,18 @@ section:nth-child(even) {
     overflow: hidden;
     box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
     border: 4px solid #fff;
-    aspect-ratio: 21 / 9;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .agentic-models-img img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
     display: block;
+    transform: scale(0.9);
 }
 
 /* Links Section */
