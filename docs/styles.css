@@ -451,7 +451,6 @@ section:nth-child(even) {
     object-fit: cover;
     object-position: center 70%;
     display: block;
-    filter: grayscale(100%);
 }
 
 .philosophy-content {
