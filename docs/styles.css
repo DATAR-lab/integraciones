@@ -330,6 +330,27 @@ section:nth-child(even) {
     display: block;
 }
 
+.prototype-intro-text {
+    max-width: 100%;
+    margin: 0 auto 3rem;
+    font-size: 1.15rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+.prototype-intro-text p {
+    margin-bottom: 1.5rem;
+}
+
+.prototype-intro-text p:last-child {
+    margin-bottom: 0;
+}
+
+.prototype-intro-text strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
 .prototype-content {
     max-width: 1000px;
     margin: 0 auto;
@@ -337,12 +358,13 @@ section:nth-child(even) {
 }
 
 .prototype-img-container {
-    margin-bottom: 3rem;
+    margin: 0 auto 3rem;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
     border: 8px solid #fff;
     background: #eee;
+    width: 80%;
 }
 
 .prototype-description {
@@ -354,12 +376,12 @@ section:nth-child(even) {
 
 .prototype-cta {
     display: inline-block;
-    padding: 1.4rem 4rem;
+    padding: 1rem 2.5rem;
     background: linear-gradient(135deg, #333, #545454);
     color: #fff;
     text-decoration: none;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border-radius: 50px;
     transition: all 0.3s ease;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
