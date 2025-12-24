@@ -377,6 +377,42 @@ section:nth-child(even) {
     font-weight: 600;
 }
 
+.prototype-images-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.prototype-image-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.prototype-images-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: grayscale(100%);
+}
+
+.prototype-images-grid img:hover {
+    transform: scale(1.02);
+    filter: grayscale(0%);
+}
+
+.prototype-image-caption {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    text-align: center;
+    font-style: italic;
+    line-height: 1.4;
+}
+
 .prototype-content {
     max-width: 1000px;
     margin: 0 auto;
@@ -480,6 +516,13 @@ section:nth-child(even) {
     filter: saturate(1.1);
     transform: scale(1.02);
     border-color: var(--accent-secondary);
+}
+
+.link-card-life-sciences .card-thumbnail {
+    padding: 1.5rem;
+    object-fit: contain;
+    object-position: center;
+    background-color: #eeebe3;
 }
 
 /* Philosophy Section Styles */
